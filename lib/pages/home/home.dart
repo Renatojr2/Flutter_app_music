@@ -8,50 +8,43 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: Container(
         child: Center(
-          child: Stack(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    SvgPicture.asset(
-                      name,
-                      width: 150,
-                      height: 150,
-                    ),
-                    SizedBox(
-                      height: 20,
-                    ),
-                    Text(
-                      'Seu app de musica',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      'Ouça musica a hora e onde quiser',
-                      style: TextStyle(
-                        color: Colors.grey[600],
-                      ),
-                    ),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    FlatButton(
-                      height: 50,
-                      minWidth: 200,
-                      color: Colors.red,
-                      child: Text(
-                        'Login',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                        ),
-                      ),
-                      onPressed: () {},
-                    )
-                  ],
+              SvgPicture.asset(
+                name,
+                width: 150,
+                height: 150,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Seu app de musica',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                'Ouça musica a hora e onde quiser',
+                style: TextStyle(
+                  color: Colors.grey[600],
                 ),
               ),
+              SizedBox(
+                height: 50,
+              ),
+              FlatButton(
+                height: 50,
+                minWidth: 200,
+                color: Colors.red,
+                child: Text(
+                  'Login',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                  ),
+                ),
+                onPressed: () {},
+              )
             ],
           ),
         ),
